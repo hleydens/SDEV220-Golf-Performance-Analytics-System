@@ -1,4 +1,11 @@
-class Course:
-    """Represents a golf course."""
+from dataclasses import dataclass
 
-    pass
+
+@dataclass
+class Course:
+
+    name: str
+    rating: float
+    slope: int
+    par: int
+    hole_pars: list

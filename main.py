@@ -1,9 +1,9 @@
-from src.gui import MainWindow
+from src.app import App
 
 
 def main():
 
-    app = MainWindow()
+    app = App()
 
     app.run()
 
