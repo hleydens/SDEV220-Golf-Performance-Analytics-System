@@ -18,26 +18,22 @@ class WelcomeScreen(BaseScreen):
         Button(
             self,
             text="Start New Round",
-            width=30
-        ).pack(pady=8)
-
-        Button(
-            self,
-            text="View Golfer Statistics",
-            width=30
-        ).pack(pady=8)
-
-        Button(
-            self,
-            text="Manage Golfers",
             width=30,
-            command=self.app.show_manage_golfers
-        ).pack()
+            command=self.app.show_start_round
+        ).pack(pady=8)
+
+        Button(
+            self,
+            text="View Round History",
+            width=30,
+            command=self.app.show_round_history
+        ).pack(pady=8)
 
         Button(
             self,
             text="Manage Courses",
-            width=30
+            width=30,
+            comman=self.app.show_manage_courses
         ).pack(pady=8)
 
         Button(
